@@ -10,10 +10,9 @@ namespace DataAccessayer.Repository
 {
     public class GenericRepository<T>(Context _context) : IGenericDal<T> where T : class
     {
-        public void Delete(int id)
+        public void Delete(T entity)
         {
-            var value = _context.Set<T>().Find(id);
-            _context.Remove(value);
+           _context.Remove(entity);
 
             _context.SaveChanges();
 

@@ -11,7 +11,7 @@ namespace DataAccessayer.Abstract
         T GetById(int id);
         void Insert(T entity);
         void Update(T entity);
-        void Delete(int id);
+        void Delete(T entity);
 
         List<T> GetAll();
 

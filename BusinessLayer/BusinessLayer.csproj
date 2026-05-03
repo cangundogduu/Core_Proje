@@ -23,4 +23,8 @@
     <ProjectReference Include="..\DataAccessayer\DataAccessayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ValidationRules\" />
+  </ItemGroup>
+
 </Project>
